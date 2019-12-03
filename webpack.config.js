@@ -5,7 +5,7 @@ module.exports = {
     entry: glob.sync(path.join(__dirname, 'src/js/*.js')),
     mode: 'none',
     output : {
-        path: path.resolve(__dirname, 'src'),
+        path: path.resolve(__dirname, 'src/js'),
         filename: 'bundle.js'
     },
     module: {
