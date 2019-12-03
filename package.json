@@ -4,7 +4,8 @@
   "description": "Leaf Green Footprints Project enivromental awareness for PGC",
   "main": "leaflet-src.esm.js",
   "scripts": {
-    "start": "webpack && node server"
+    "start": "node server",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
