@@ -9,43 +9,34 @@
   
 }
 
+/* Style the body */
 body {
-  margin: 0%;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:whitesmoke;
-  background-image: url('leaf background.png');
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;  
-  background-size: cover;
-
+  font-family: Zapf-Chancery;
+  margin: 0;
+  background-color: #ffffff;
 }
 
-h1{
-  color: #024D11;
-  position: relative;
-  top: 18px;
-  text-align: center;
-  padding-bottom: 10px; 
-  text-shadow: 8px 8px 10px#FFFFFF;
-  font-size: 45pt;
-
-
+/* Header layout for all webpages */
+.header {
+  padding: 50px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-image: url("leaf background.png");
+  background-position: right;
+  color: #ffffff;
+  text-shadow: 10px 10px 15px black, 5px 5px 5px #506600;
+  background-color: #131a08;
 }
 
-.header img {
-  float: left;
-  border: 1px solid #0C4015;
-  border-radius: 4px;
-  padding: 5px;
-  width: 220px;
-  height: 280px;
+.header h1 {
+  font-size: 45px;
 }
-
 
 .topnav {
-  background-color: #284200;
+  background-color: #506600;
   overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 .topnav a {
@@ -58,13 +49,13 @@ h1{
 }
 
 .topnav a:hover {
-  background-color:#ADBAAE;
+  background-color: #ffffff;
   color: black;
 }
 
-.topnav a.active { 
-  background-color:#5A8C62; 
-  color: white;
+.topnav a.active {
+  background-color: #92c73e;
+  color: black;
 }
 
 .topnav .search-container {
@@ -93,11 +84,10 @@ h1{
   background: #ccc;
 }
 
-.topnav .search-container img{
-    width: 20px;
-    height:15px;
-    border: none;
-
+.topnav .search-container img {
+  width: 20px;
+  height: 15px;
+  border: none;
 }
 
 .column {
@@ -117,6 +107,8 @@ h1{
     float: left;
     width: 33.33%;
     padding: 5px;
+    background: white;
+    padding: 20px;
 }
 
 .flex-container {
@@ -233,13 +225,6 @@ margin: 20px;
   text-align: center;
 }
 
-.footer{
-  margin-bottom: 0;
-  background:  #400612; 
-  height: 100px;
-  color: white;
-}
-
 .row .column .heron {
   width: 400px;
   height: 400px;
@@ -302,6 +287,15 @@ margin: 20px;
   border: 3px double #26402A; 
   border-radius: 4px;
   padding: 5px;
+}
+
+/* Footer */
+.footer {
+  color: whitesmoke;
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+  background: #131a08;
 }
 
 

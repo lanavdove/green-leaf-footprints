@@ -34,14 +34,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
 }
-.navbar-left img {
-  float: left;
-  border: 1px solid #0c4015;
-  border-radius: 4px;
-  padding: 5px;
-  width: 220px;
-  height: 280px;
-}
+
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -105,6 +98,14 @@ body {
   flex-wrap: wrap;
 }
 
+.column {
+    display: flexbox;
+    width: 45%;
+    padding: 10;
+    background: red;
+    
+  }
+
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
@@ -112,7 +113,36 @@ body {
   flex: 30%;
   background-color: #b1d07f;
   padding: 20px;
+  
 }
+
+.slideimg {
+    transform: rotate(90deg);
+    height: 350px;
+    width: 450px;
+    margin: auto;
+  
+  }
+
+  .slideshow-container {
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+  }
+
 
 /* Main column */
 .main {
