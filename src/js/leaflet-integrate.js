@@ -57,5 +57,5 @@ var greenIcon = L.icon({
 });
 
 L.marker([38.97782697554026, -76.94927215576172], { icon: greenIcon }).addTo(
-  map
+  mymap
 );
