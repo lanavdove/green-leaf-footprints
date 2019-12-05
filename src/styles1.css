@@ -370,19 +370,3 @@ margin: 20px;
     width: 100%;
   }
 }
-
-
-}
-
-.footer {
-  color:black;
-  position: fixed;
-  left: 0;
-  height: 80px;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(244, 247, 244);
-  text-align: center;
-}
-
-
