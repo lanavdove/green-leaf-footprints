@@ -358,17 +358,11 @@ margin: 20px;
   float: left;
   width: 45%;
   padding: 10px;
-  height: 600px; 
   text-align: center;
   vertical-align: middle;
 
 }
 
-.heatmap {
-  width:600px;
-  height:600px; 
-  text-align: center;
-}
 
 /* Responsive layout for html files */
 @media screen and (max-width: 800px) {
