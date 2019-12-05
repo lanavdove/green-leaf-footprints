@@ -247,25 +247,13 @@ margin: 20px;
   height: auto;
 }
 
-
-.lake {
-  max-height: 480px;
-  max-width: 700px;
-    width: 100%;
-    height: auto;
+.column-5 img{
+  max-width: 500px;
+  height: auto;
 }
 
-.intro {
-  display: flex;
-  align-items: center;
-  margin: 5px;
-  padding: 10px;
+.column-5 p {
   background-color:#B1D07F;
-
-}
-
-.intro p{
-  background-color: #FFFFFF;
   padding: 20px;
   margin-left: 10px;
   display: flex;
@@ -334,26 +322,6 @@ margin: 20px;
   background: #b1d07f;
 }
 
-/* Footer */
-.footer {
-  color: whitesmoke;
-  padding: 30px;
-  text-align: center;
-  align-items: center;
-  background: #131a08;
-}
-
-.closing {
-  color: black;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin: 20px;
-  border: 4px solid ;
-  border-radius: 4px;
-  background: #b1d07f;
-  
-}
 .column-4 {
   float: left;
   width: 45%;
@@ -362,11 +330,58 @@ margin: 20px;
   vertical-align: middle;
 
 }
+.footer {
+	bottom: 0;
+	padding-top: 10px;
+	width: 100%;
+	height: 78px;
+	background: #131a08 ;
+}
 
+.content {
+	display: block;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+  text-align: center;
+  background: #131a08;
+}
+
+.foot { 
+  text-align: center; 
+  line-height: 30px; 
+  color: whitesmoke;
+}
+
+.logo{ 
+  display: inline-block;  
+  width: 150px;
+  height: 200px;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column-5 {
+  background: whitesmoke;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; 
+  text-align: center;
+  /* Should be removed. Only for demonstration */
+
+}
+
+/* Clear floats after the columns */
+.row-5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* Responsive layout for html files */
-@media screen and (max-width: 800px) {
-  .column, .column-3, .column-4 {
+@media screen and (max-width: 600px) {
+  .column, .column-3, .column-4, .column-5 {
     width: 100%;
   }
 }

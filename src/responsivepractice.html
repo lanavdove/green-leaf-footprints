@@ -10,7 +10,7 @@
 
 
 /* Create two equal columns that floats next to each other */
-.column {
+.column-5 {
   float: left;
   width: 50%;
   padding: 10px;
@@ -21,24 +21,20 @@
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row-5:after {
   content: "";
   display: table;
   clear: both;
 }
 
 .responsive {
-
     width: 100%;
     height: auto;
 }
 
-
-
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
+  .column-5 {
     width: 100%;
   }
 }
@@ -50,17 +46,17 @@
 <p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
 
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
+<div class="row-5">
+  <div class="column-5" style="background-color:#aaa;">
         <img
         src="lake quote.png"
         class="responsive"
         alt="Picture of Lake Artemesia">
   </div>
-  <div class="column" style="background-color:#bbb;">
+  <div class="column-5" style="background-color:#bbb;">
         <h2>Column 2</h2>
         <p>
-                <span>
+            
                   It is important that we come together to make our community a greener
                   and healthier place. By taking responsibility of our environmental
                   habits, we can make the world a better place one step at a time.
