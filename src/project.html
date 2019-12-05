@@ -13,6 +13,25 @@
       integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
       crossorigin=""
     ></script>
+    <script type="text/javascript" src="http://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    
+    
+    <script type="text/javascript">
+      function initViz() {
+            var containerDiv = document.getElementById("heatmap"),
+                url = "https://public.tableau.com/views/INST377/Sheet2?:display_count=y&publish=yes&:origin=viz_share_link",
+
+
+            options = {
+                    hideTabs: true,
+                    onFirstInteractive: function () {
+                        console.log("Run this code when the viz has finished loading.");
+                    }
+                };
+                var viz = new tableau.Viz(containerDiv, url, options);
+            // Create a viz object and embed it in the container div.
+        }
+    </script>
 
     <link href="styles1.css" rel="stylesheet" type="text/css" />
   </head>
@@ -62,8 +81,8 @@
       <div id="mapid"></div>
     </div>
     <div class="column-4">
-      <p> heat map goes here
-      </p>
+      <div id="heatmap" style="width:600px; height:600px; text-align: center;"> </div>
+      
     </div>
   </div>
 
