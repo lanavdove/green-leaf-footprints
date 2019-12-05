@@ -202,7 +202,7 @@ margin: 20px;
 .numbertext {
   color: #f2f2f2;
   font-size: 20px;
-  position: absolute;
+  position: relative;
   top: 0;
   padding-top: 75px;
 }
@@ -222,7 +222,6 @@ margin: 20px;
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -355,23 +354,25 @@ margin: 20px;
   background: #b1d07f;
   
 }
-
-/* Create two equal columns that floats next to each other */
 .column-4 {
   float: left;
-  width: 50%;
+  width: 45%;
   padding: 10px;
-  height: 400px; 
+  height: 600px; 
   text-align: center;
   vertical-align: middle;
-  border: 2px solid black;
-  /* Should be removed. Only for demonstration */
 
 }
 
-/* Responsive layout for index.html*/
+.heatmap {
+  width:600px;
+  height:600px; 
+  text-align: center;
+}
+
+/* Responsive layout for html files */
 @media screen and (max-width: 800px) {
-  .column {
+  .column, .column-3, .column-4 {
     width: 100%;
   }
 }
