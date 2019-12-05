@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; 
+  text-align: center;
+  /* Should be removed. Only for demonstration */
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.responsive {
+
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Two Column Layout</h2>
+<p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+        <img
+        src="lake quote.png"
+        class="responsive"
+        alt="Picture of Lake Artemesia">
+  </div>
+  <div class="column" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>
+                <span>
+                  It is important that we come together to make our community a greener
+                  and healthier place. By taking responsibility of our environmental
+                  habits, we can make the world a better place one step at a time.
+                  Environmental awareness and education is key to encouraging
+                  conservation and sustainability efforts. We hope we inspire and
+                  motivate you to make some changes today and to start taking steps
+                  towards a greener future.
+                  <br />
+                  <br />
+                  <a class="introlink" href="about.html"
+                    >Learn more about our Vission and Mission
+                  </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
