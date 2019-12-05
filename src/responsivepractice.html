@@ -5,6 +5,7 @@
 <style>
 * {
   box-sizing: border-box;
+  background: whitesmoke;
 }
 
 
@@ -27,10 +28,95 @@
   clear: both;
 }
 
+
 .responsive {
     width: 100%;
     height: auto;
 }
+
+/* Automatic image slide styling for index.html file */
+.slideshow-container {
+  max-width: 500px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  padding-bottom: 20px;
+  border: 2px solid black;
+}
+
+
+.numbertext {
+  color: whitesmoke; /* dont want the numbers to appear in slide show */
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  padding-top: 75px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slideimg {
+  transform: rotate(90deg);
+  height: 350px;
+  width: 450px;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+	bottom: 0;
+	padding-top: 10px;
+	width: 100%;
+	height: 78px;
+	background: #131a08 ;
+}
+
+.content {
+	display: block;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+  text-align: center;
+  background: #131a08;
+}
+
+.foot { 
+  text-align: center; 
+  line-height: 30px; 
+  color: whitesmoke;
+}
+
+.logo{ 
+  display: inline-block;  
+  width: 150px;
+  height: 200px;
+}
+
+.ent {
+    text-align: center;
+}
+
+
+/* End of styling for automatic image slideshow */
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -41,37 +127,74 @@
 </style>
 </head>
 <body>
-
-<h2>Responsive Two Column Layout</h2>
-<p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
-
+<div class="ent">
+<h2>Importance of Environmental Awareness</h2>
+<p>
+        Our community needs to come together and make
+        more of an effort to help keep the community healtheir and cleaner for
+        its current and future residents. 
+      </p>
+    </div>
 
 <div class="row-5">
-  <div class="column-5" style="background-color:#aaa;">
-        <img
-        src="lake quote.png"
-        class="responsive"
-        alt="Picture of Lake Artemesia">
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="nature3.jpg" class="slideimg" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src=" nature.jpg" class="slideimg" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="umd campus.jpg" class="slideimg" />
+          </div>
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <br />
+
   </div>
-  <div class="column-5" style="background-color:#bbb;">
-        <h2>Column 2</h2>
-        <p>
-            
-                  It is important that we come together to make our community a greener
-                  and healthier place. By taking responsibility of our environmental
-                  habits, we can make the world a better place one step at a time.
-                  Environmental awareness and education is key to encouraging
-                  conservation and sustainability efforts. We hope we inspire and
-                  motivate you to make some changes today and to start taking steps
-                  towards a greener future.
-                  <br />
-                  <br />
-                  <a class="introlink" href="about.html"
-                    >Learn more about our Vission and Mission
-                  </a>
-    </div>
-  </div>
-</div>
+
+
+    <div class="footer">
+            <div class="content">
+                <img src="logo.png" alt="Green Leaf FootPrints logo image" class="logo">
+                    <div class="foot">Made by Leaf Green FootPrints © 2019</div>
+            </div>
+        </div>
+
+    <script>
+            var slideIndex = 0;
+            showSlides();
+      
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1;
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 5000); // Changes the image every 5 seconds
+            }
+          </script>
 
 </body>
 </html>
