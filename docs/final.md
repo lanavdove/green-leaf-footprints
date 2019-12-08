@@ -18,10 +18,14 @@ Waste and recylcing center information
 https://www.princegeorgescountymd.gov/612/Facilities
 ## Technical system decision rationale
 Leaflet - good tool for users trying to find trash dumping locations on a map and utilizes javascript
-Tableau - has attractive heatmap tool to visualize amount of trash in Prince George's County
----could someone explain why these were utilized over other tools ---
-Glob - 
-Babel -
-Webpack -
 
+Tableau - has attractive heatmap tool to visualize amount of trash in Prince George's County
+
+---could someone explain why these were utilized over other tools ---
+
+Glob - 
+
+Babel -
+
+Webpack -
 ## Final Project Analysis
