@@ -377,6 +377,7 @@ margin: 20px;
   font-size: 35px;
 }
 
+
 .row-5:after {
   content: "";
   display: table;
@@ -394,8 +395,8 @@ margin: 20px;
 
 
 /* Responsive layout for all html files */
-@media screen and (max-width: 600px) {
-  .column, .column-3, .column-4, .column-5 {
+@media screen and (max-width: 870px) {
+  .column, .column-3, .column-4, .column-5{
     width: 100%;
   }
 }
