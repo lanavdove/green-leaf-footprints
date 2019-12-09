@@ -95,8 +95,8 @@
 <script>
 
   var mymap = L.map("mapid").setView(
-    [38.97782697554026, -76.94927215576172],
-    15
+    [38.874, -76.94927215576172],
+    10
   );
 
 L.circle([38.98, -76.93], 200, {
@@ -119,9 +119,11 @@ L.circle([38.98, -76.93], 200, {
 		fillOpacity: 0.5
 	}).addTo(mymap).bindPopup("High Concentraction of Trash");
 
+  L.marker([38.874580, -76.803620]).addTo(mymap)
+		.bindPopup("Household Hazardous Waste Acceptance Site").openPopup();
 
-  L.marker([38.97782697554026, -76.94927215576172]).addTo(mymap)
-		.bindPopup("Dumping Area").openPopup();
+  L.marker([38.713340, -76.854230]).addTo(mymap)
+		.bindPopup("Missouri Avenue Solid Waste Acceptance and Recycling Center").openPopup();
 
   
 
