@@ -15,7 +15,8 @@
 ## Developer Manual
 
 ### Installation
-npm i to install all dependencies for the application
+*go to the root repository that has the package.json
+*npm i to install all dependencies for the application
 
 ### Running the Application on a Server
 ### Tests
