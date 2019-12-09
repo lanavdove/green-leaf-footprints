@@ -1,149 +1,166 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
-  <script type="text/javascript" src="http://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript">
+      function initViz() {
+        var containerDiv = document.getElementById("heatmap"),
+          url =
+            "https://public.tableau.com/views/INST377/Sheet2?:display_count=y&publish=yes&:origin=viz_share_link",
+          options = {
+            hideTabs: true,
+            onFirstInteractive: function() {
+              console.log("Run this code when the viz has finished loading.");
+            }
+          };
+        var viz = new tableau.Viz(containerDiv, url, options);
+        // Create a viz object and embed it in the container div.
+      }
+    </script>
 
+    <link href="styles1.css" rel="stylesheet" type="text/css" />
+  </head>
 
-  <script type="text/javascript">
-    function initViz() {
-      var containerDiv = document.getElementById("heatmap"),
-        url = "https://public.tableau.com/views/INST377/Sheet2?:display_count=y&publish=yes&:origin=viz_share_link",
-
-
-        options = {
-          hideTabs: true,
-          onFirstInteractive: function () {
-            console.log("Run this code when the viz has finished loading.");
-          }
-        };
-      var viz = new tableau.Viz(containerDiv, url, options);
-      // Create a viz object and embed it in the container div.
-    }
-  </script>
-
-  <link href="styles1.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body onload="initViz();">
-  <div class="header">
-    <h1>Project Results</h1>
-  </div>
-
-  <div class="topnav">
-    <a href="index.html">HOME</a>
-    <a href="about.html">ABOUT US</a>
-    <a class="active" href="#project"> PROJECT</a>
-    <a href="documentation.html">DOCUMENTATION</a>
-    <a href="#contact">CONTACT US</a>
-    <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search" />
-        <button type="submit">
-          <img src="searchicon.png" class="search" />
-        </button>
-      </form>
+  <body onload="initViz();">
+    <div class="header">
+      <h1>Project Results</h1>
     </div>
-  </div>
 
-  <div class="flex-container">
-    <div class="column-3">
-      <h2>Raising Litter Awareness </h2>
-      <h5>
-        We use current, local data to inform the community of concerning
-        environmental issues in hopes to enlighten the community on better litter habits
-      </h5>
-      <p>
-        Below are our results for our data analysis for PGC litter Track data. 
-        This data is a collection of individual and group clean-up events throughout
-        the county. We used this data to highlight areas of higher concentrations 
-        of illegal trash pick-ups through a heat map of the county. The bottom right is 
-        our heatmap analysis, where areas of higher concentration are represented in yellow.
-        Most of trash that was reported through clean-ups and individuals were a result of illegal
-        dumping of litter and trash. It is important we are aware of this issue and address it accordingly. </p>
-
-        <p>We offer an interactive map to the left of our results for residents of the community to 
-        locate areas for proper litter drop-off. Although this map is currently limited, in the future we hope to have
-        a bigger vareity of places people can dump their trash with the option to filter based on the type of trash they
-        have and the distance from their location.
-      </p>
-    </div>
-  </div>
-  <br />
-  <div class="row">
-    <div class="column-4">
-      <div id="mapid"></div>
-    </div>
-    <div class="column-4">
-      <div id="heatmap" style="width:600px; height:300px; text-align: center;"> </div>
-
-    </div>
-  </div>
-
-  <br />
-
-  <div class="footer">
-      <div class="content">
-          <img src="logo.png" alt="Green Leaf FootPrints logo image" class="logo">
-              <div class="foot">Made by Leaf Green FootPrints © 2019</div>
+    <div class="topnav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a class="active" href="#project"> PROJECT</a>
+      <a href="documentation.html">DOCUMENTATION</a>
+      <a href="#contact">CONTACT US</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit">
+            <img src="searchicon.png" class="search" />
+          </button>
+        </form>
       </div>
-  </div>
-  
-</body>
-<script>
+    </div>
 
-  var mymap = L.map("mapid").setView(
-    [38.874, -76.94927215576172],
-    10
-  );
+    <div class="flex-container">
+      <div class="column-3">
+        <h2>Raising Litter Awareness</h2>
+        <h5>
+          We use current, local data to inform the community of concerning
+          environmental issues in hopes to enlighten the community on better
+          litter habits
+        </h5>
+        <p>
+          Below are our results for our data analysis for PGC litter Track data.
+          This data is a collection of individual and group clean-up events
+          throughout the county. We used this data to highlight areas of higher
+          concentrations of illegal trash pick-ups through a heat map of the
+          county. The bottom right is our heatmap analysis, where areas of
+          higher concentration are represented in yellow. Most of trash that was
+          reported was through individual and group clean-ups and were a result
+          of illegal dumping of litter and trash.It is important we are aware of
+          this issue and address it accordingly.
+        </p>
 
-L.circle([38.98, -76.93], 200, {
-		color: 'green',
-		fillColor: 'green',
-		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("High Concentraction of Trash");
+        <p>
+          We offer an interactive map to the left of our results for residents
+          of the community to locate areas for proper litter drop-off. Although
+          this map is currently limited, in the future we hope to have a bigger
+          vareity of places people can dump their trash with the option to
+          filter based on the type of trash they have and the distance from
+          their location.
+        </p>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="column-4">
+        <div id="mapid"></div>
+      </div>
+      <div class="column-4">
+        <div
+          id="heatmap"
+          style="width:600px; height:300px; text-align: center;"
+        ></div>
+      </div>
+    </div>
 
+    <br />
 
+    <div class="footer">
+      <div class="content">
+        <img
+          src="logo.png"
+          alt="Green Leaf FootPrints logo image"
+          class="logo"
+        />
+        <div class="foot">Made by Leaf Green FootPrints © 2019</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var mymap = L.map("mapid").setView([38.874, -76.94927215576172], 10);
 
-  L.circle([38.97, -76.99], 250, {
-		color: 'green',
-		fillColor: 'green',
-		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("High Concentraction of Trash");
+    L.circle([38.98, -76.93], 200, {
+      color: "green",
+      fillColor: "green",
+      fillOpacity: 0.5
+    })
+      .addTo(mymap)
+      .bindPopup("High Concentraction of Trash");
 
-  L.circle([38.96, -76.95], 300, {
-		color: 'green',
-		fillColor: 'green',
-		fillOpacity: 0.5
-	}).addTo(mymap).bindPopup("High Concentraction of Trash");
+    L.circle([38.97, -76.99], 250, {
+      color: "green",
+      fillColor: "green",
+      fillOpacity: 0.5
+    })
+      .addTo(mymap)
+      .bindPopup("High Concentraction of Trash");
 
-  L.marker([38.874580, -76.803620]).addTo(mymap)
-		.bindPopup("Household Hazardous Waste Acceptance Site").openPopup();
+    L.circle([38.96, -76.95], 300, {
+      color: "green",
+      fillColor: "green",
+      fillOpacity: 0.5
+    })
+      .addTo(mymap)
+      .bindPopup("High Concentraction of Trash");
 
-  L.marker([38.713340, -76.854230]).addTo(mymap)
-		.bindPopup("Missouri Avenue Solid Waste Acceptance and Recycling Center").openPopup();
+    L.marker([38.87458, -76.80362])
+      .addTo(mymap)
+      .bindPopup("Household Hazardous Waste Acceptance Site")
+      .openPopup();
 
-  
+    L.marker([38.71334, -76.85423])
+      .addTo(mymap)
+      .bindPopup("Missouri Avenue Solid Waste Acceptance and Recycling Center")
+      .openPopup();
 
-
-  L.tileLayer(
-    "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
-    {
-      maxZoom: 13,
-      attribution:
-        'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      id: "mapbox.streets"
-    }
-  ).addTo(mymap);
-</script>
-
+    L.tileLayer(
+      "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+      {
+        maxZoom: 13,
+        attribution:
+          'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: "mapbox.streets"
+      }
+    ).addTo(mymap);
+  </script>
 </html>
