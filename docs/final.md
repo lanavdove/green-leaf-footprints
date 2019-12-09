@@ -8,30 +8,31 @@ Diego Hagans
 
 Lauren Thomas
 ## Link
-(https://green-leaf-footprints.herokuapp.com/ "Our Application")
+https://green-leaf-footprints.herokuapp.com/
 ## Information Problem
-To address the environmental habits of Prince George's County through real-life data on current recycling and weekly trash disposal habits
+<p> To address the environmental habits of Prince George's County through real-life data on current recycling and weekly trash disposal habits </p>
+
 ## Stakeholders 
 * Environmental Health Division and Environmental Education in Prince George’s County
 
 * Communities that comprise Prince George’s
 
 ## Data
-LiterTRAK for Prince George's County
+* LiterTRAK for Prince George's County -
 https://data.princegeorgescountymd.gov/Environment/LitterTRAK/9tsa-iner/data
 
-Waste and recylcing center information
+* Waste and recylcing center information -
 https://www.princegeorgescountymd.gov/612/Facilities
 ## Technical System Decision Rationale
-* Leaflet - good tool for users trying to find trash dumping locations on a map and utilizes javascript
+*  **Leaflet**- good tool for users trying to find trash dumping locations on a map and utilizes javascript
 
-* Tableau - has attractive heatmap tool to visualize amount of trash in Prince George's County. This gave us the ability to create a visualization that highlighted areas of high illegal dumping and trash concentration. 
+* **Tableau**- has attractive heatmap tool to visualize amount of trash in Prince George's County. This gave us the ability to create a visualization that highlighted areas of high illegal dumping and trash concentration. 
 
-* Glob - Supporting library that allows for easy bundling of multiple files by pattern. This allowed bundling for our files smoothly and efficiently based off their relevances.
+* **Glob** - Supporting library that allows for easy bundling of multiple files by pattern. This allowed bundling for our files smoothly and efficiently based off their relevances.
 
-* Babel - Javascript compiler for es6 and above down to plain js across multiple browsers. This allows our application to be accessible across multiple broswers.
+* **Babel** - Javascript compiler for es6 and above down to plain js across multiple browsers. This allows our application to be accessible across multiple broswers.
 
-* Webpack - module bundler that takes modules with dependencies and generates static assets representing those modules.
+* **Webpack** - module bundler that takes modules with dependencies and generates static assets representing those modules.
 
 ## Final Project Analysis
   <p>We learned through the project that instead of plainly showing the liter data to inspire others to take action against littering, we would want to show locations on where to dump trash in order to reduce litter instead. This is more of an information solution that can change behavior. We display waste and recylcing centers on an interactive map based upon the users location in order to give users the closest locations to dump their garbage. </p>
