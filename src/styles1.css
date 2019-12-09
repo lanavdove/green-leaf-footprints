@@ -393,10 +393,16 @@ margin: 20px;
  
 }
 
+.column-2 img{
+  transform: rotate(90deg);
+  width: 400px;
+  height: 400px;
+}
+
 
 /* Responsive layout for all html files */
 @media screen and (max-width: 870px) {
-  .column, .column-3, .column-4, .column-5{
+  .column, .column-2, .column-3, .column-4, .column-5{
     width: 100%;
   }
 }
