@@ -1,7 +1,7 @@
 
 
 # Leaf Green Footprints
-Our goal is to address the environmental habits and concerns of the communities that comprise Prince George's County by enlightening residences of better littering practices. We hope to bring litter awareness to the residences by showing them real-life data on their current recycling and trash habits, along with the amount of trash that they compile on a weekly basis. Environmental awareness is an important aspect of encouraging conservation efforts, and it is important we work together as a community to address this issue.
+<p>Our goal is to address the environmental habits and concerns of the communities that comprise Prince George's County by enlightening residences of better littering practices. We hope to bring litter awareness to the residences by showing them real-life data on their current recycling and trash habits, along with the amount of trash that they compile on a weekly basis. Environmental awareness is an important aspect of encouraging conservation efforts, and it is important we work together as a community to address this issue.</p>
 
 ## Heroku Instance
 https://green-leaf-footprints.herokuapp.com/
@@ -15,6 +15,7 @@ https://github.com/lanavdove/green-leaf-footprints/blob/master/docs/user.md
 ## Developer Manual
 
 ### Installation
+
 ### Running the Application on a Server
 ### Tests
 ### The API
