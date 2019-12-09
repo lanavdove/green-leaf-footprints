@@ -35,9 +35,15 @@ The heatmap made through Tableau does not appear on the right corner of the Proj
 * Diego Hagans
 
 ## Documentation
+Leaflet was used to create an interactive map to identify locations to dispose of waste.
+Tableau was used to create a heat map of areas of high litter concentrations.
+Glob is a supporting library that allows for easy file bundling. We used this to bundle our files smoothly and efficiently based on relevance.
+Babel is a Javascript compiler for es6 and above through plain JS across browsers. This allows our application to be accessible on multiple browsers.
+Webpack is a module bundler that takes modules with dependencies and generates static assets representing those modules.
 
 ## License
 * <a href="https://opensource.org/licenses/mit-license.php"> MIT License </a>
 * Copyright 2019 © LeafGreenTeam
 
-## Acknowledgements 
+## Acknowledgements
+W3 Schools Online Web Tutorials for guidance and inspiration and Leaflet for providing easy to follow tutorials and documentation.
