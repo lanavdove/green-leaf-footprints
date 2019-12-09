@@ -15,8 +15,8 @@
 ## Developer Manual
 
 ### Installation
-*go to the root repository that has the package.json
-*npm i to install all dependencies for the application
+* go to the root repository that has the package.json
+* npm i to install all dependencies for the application
 
 ### Running the Application on a Server
 ### Tests
@@ -27,10 +27,10 @@ The data for this project came from an API pull from https://data.princegeorgesc
 ### Known Bugs and Future Development
 
 ## Contributing
-*Lana Dove
-*Lauren Thomas 
-*Camden Kelley
-*Diego Hagans
+* Lana Dove
+* Lauren Thomas 
+* Camden Kelley
+* Diego Hagans
 
 ## Documentation
 
