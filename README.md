@@ -20,12 +20,13 @@
 
 ### Running the Application on a Server
 ### Tests
+No tests have currently been made for the application.
 ### The API
 The data for this project came from an API pull from https://data.princegeorgescountymd.gov/Environment/LitterTRAK/9tsa-iner/data
 -- Please insert the GET, POST, PATCH endpoints --
 
 ### Known Bugs and Future Development
-The heatmap made through Tableau does not appear on the right corner of the Project page when deployed through Heroku. We anticipate having ocassional problems with Heroku such as load time. Some of our interactive visuals have a lot of data to display and therefore sometimes take a long time to load as well.
+The heatmap made through Tableau does not appear on the right corner of the Project page when deployed through Heroku. We anticipate having ocassional problems with Heroku such as load time. Some of our interactive visuals have a lot of data to display and therefore sometimes take a long time to load as well. Future development will take place with integrating Tableau better with Heroku as well as including future visuals that show different facets of the LiterTrak dataset. Involvement with Prince George's County is a possibility in the future to increase website accessibility.
 
 ## Contributing
 * Lana Dove
