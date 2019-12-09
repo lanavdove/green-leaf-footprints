@@ -25,6 +25,7 @@ The data for this project came from an API pull from https://data.princegeorgesc
 -- Please insert the GET, POST, PATCH endpoints --
 
 ### Known Bugs and Future Development
+The heatmap made through Tableau does not appear on the right corner of the Project page when deployed through Heroku. We anticipate having ocassional problems with heroku such as load time. Some of our interactive visuals have a lot of data to display and therefore sometimes take a long time to load as well.
 
 ## Contributing
 * Lana Dove
